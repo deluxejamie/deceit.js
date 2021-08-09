@@ -1,0 +1,24 @@
+{
+  "name": "deceit.js",
+  "version": "1.0.0",
+  "description": "Javascript library for the Deceit API.",
+  "main": "./src/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mainleau/deceit.js.git"
+  },
+  "keywords": [
+    "deceit",
+    "api",
+    "node"
+  ],
+  "author": "MainLeau",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mainleau/deceit.js/issues"
+  },
+  "homepage": "https://github.com/mainleau/deceit.js#readme",
+  "dependencies": {
+    "node-fetch": "^2.6.1"
+  }
+}
