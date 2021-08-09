@@ -13,7 +13,7 @@ class Highscores {
     const response = await request.json();
 
     if(request.status !== 200) throw new Error(response.error);
-    return new Highscore(response);
+    return new Highscore({ entries: response, type });
   }
 
 }
