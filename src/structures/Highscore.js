@@ -1,5 +1,10 @@
 const HighscoreUser = require('../structures/HighscoreUser');
 
+/**
+ * An user in highscores
+ * @typedef {Object} HighscoreUser
+ */
+
 class Highscore {
   constructor(data) {
     this.entries = data.entries.map(e => new HighscoreUser(e));
@@ -7,16 +12,11 @@ class Highscore {
   }
 
   /**
-   * An user in highscores
-   * @typedef {Object} HighscoreUser
-   */
-
-  /**
    * Get the user at the first highscores position
    * @returns {HighscoreUser}
    */
   get firstPlace() {
-    return new HighscoreUser(this.data[0]);
+    return this.entries.find(e => e.place === 1);
   }
 
   /**
@@ -25,7 +25,7 @@ class Highscore {
    * @returns {HighscoreUser}
    */
   getPlace(index) {
-    return new HighscoreUser(this.data[index - 1]);
+    return this.entries.find(e => e.place === index);
   }
 
 }
