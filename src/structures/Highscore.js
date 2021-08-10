@@ -12,20 +12,20 @@ class Highscore {
   }
 
   /**
-   * Get the user at the first highscores position
+   * Get the user at the first highscores place
    * @returns {HighscoreUser}
    */
   get firstPlace() {
-    return this.entries.find(e => e.place === 1);
+    return this.entries.find(e => e.place == 1);
   }
 
   /**
-   * Fetch an highscores
-   * @param {(string|integer)} type The type of the highscores
+   * Get a specific place of the highscores
+   * @param {(string|integer)} index Place of the highscores
    * @returns {HighscoreUser}
    */
   getPlace(index) {
-    return this.entries.find(e => e.place === index);
+    return this.entries.find(e => e.place == index);
   }
 
 }
