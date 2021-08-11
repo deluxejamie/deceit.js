@@ -10,6 +10,22 @@ class Highscore {
     this.entries = data.entries.map(e => new HighscoreUser(e));
     this.type = data.type;
   }
+  
+  /**
+   * Get the required value to have to be on the top 10 of the highscore
+   * @returns {integer}
+   */
+  get top10Requirement() {
+    return this.entries.find(e => e.place === 10).value;
+  }
+
+  /**
+   * Get the required value to have to be on the top 100 of the highscore
+   * @returns {integer}
+   */
+  get top100Requirement() {
+    return this.entries.find(e => e.place === 100).value;
+  }
 
   /**
    * Get the user at the first highscores place
