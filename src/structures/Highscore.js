@@ -8,9 +8,16 @@ const HighscoreUser = require('../structures/HighscoreUser');
 class Highscore {
   constructor(data) {
     this.entries = data.entries.map(e => new HighscoreUser(e));
-    this.type = data.type;
   }
-  
+
+  /**
+   * Get the highscore type
+   * @returns {Object}
+   */
+  get type() {
+    return this.constructor;
+  }
+
   /**
    * Get the required value to have to be on the top 10 of the highscore
    * @returns {integer}

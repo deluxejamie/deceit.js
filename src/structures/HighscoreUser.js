@@ -4,7 +4,7 @@ class HighscoreUser {
   constructor(data) {
     this.username = data.username;
     this.id = data.userId;
-    this.elo = data.value;
+    this.value = data.value;
     this.place = data.rank + 1;
   }
 }
