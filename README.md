@@ -1,5 +1,5 @@
 ## About
-deceit.js is a [Node.js](https://nodejs.org) module to interact with the [Deceit API](https://github.com/BaselineGG/DeceitAPI).
+deceit.js is a [Node.js](https://nodejs.org) module to interact with the [Deceit](https://playdeceit.com/) API.
 
 ## Installation
 
