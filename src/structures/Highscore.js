@@ -50,6 +50,16 @@ class Highscore {
   getPlace(index) {
     return this.entries.find(e => e.place == index);
   }
+  
+  /**
+   * Get users between two places of the highscores
+   * @param {(string|integer)} startIndex Start index of the places range
+   * @param {(string|integer)} endIndex End index of the places range
+   * @returns {HighscoreUser}
+   */
+  getRangePlaces(startIndex, endIndex) {
+    return this.entries.splice(startIndex + 1, endIndex + 1);
+  }
 
 }
 
