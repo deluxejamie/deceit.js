@@ -2,6 +2,7 @@ const Highscore = require('../structures/Highscore');
 const ELOHighscore = require('../structures/ELOHighscore');
 const XPHighscore = require('../structures/XPHighscore');
 const ReputationHighscore = require('../structures/ReputationHighscore');
+const Endpoints = require('../util/Endpoints');
 const fetch = require('node-fetch');
 
 class Highscores {
@@ -11,8 +12,8 @@ class Highscores {
   * @param {string} type The type of the highscores
   * @returns {Promise<Object[]>}
   */
-  static async fetch(type) {
-    const request = await fetch(`https://live.deceit.gg/hiscores?type=${type}`);
+  static async fetch(type, { legacy } = {}) {
+    const request = await fetch((!legacy ? Endpoints.HIGHSCORES : Endpoints.LEGACY_HIGHSCORES).concat(`?type=${type}`));
     const response = await request.json();
     if(request.status !== 200) throw new Error(response.error);
 

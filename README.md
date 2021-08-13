@@ -23,3 +23,10 @@ const Deceit = require('deceit.js');
 
 Deceit.highscores.fetch('rep').then(console.log);
 ```
+
+Log the legacy elo highscores:
+```javascript
+const Deceit = require('deceit.js');
+
+Deceit.highscores.fetch('elo', { legacy: true }).then(console.log);
+```
