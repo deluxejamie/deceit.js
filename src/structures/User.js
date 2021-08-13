@@ -3,7 +3,7 @@ class User {
     this.id = data.userId;
     this.username = data.name;
     this.elo = data.elo;
-    this.rank = data.rank;
+    this.rank = 20 - data.rank;
     this.marks = data.marks;
     this.xp = data.experience;
     this.level = data.level;
