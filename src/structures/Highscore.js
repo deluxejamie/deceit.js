@@ -58,7 +58,7 @@ class Highscore {
    * @returns {HighscoreUser}
    */
   getRangePlaces(startIndex, endIndex) {
-    return this.entries.splice(startIndex + 1, endIndex + 1);
+    return this.entries.slice(startIndex - 1, endIndex);
   }
 
 }
