@@ -16,6 +16,16 @@ class User {
     this.repRank = data.repRank;
     this.banner = data.banner;
     this.perks = data.perks;
+    this.character = {
+      name: data.character === 0 ? 'Alex'
+        : data.character === 1 ? 'Chang'
+        : data.character === 2 ? 'Lisa'
+        : data.character === 3 ? 'Rachel'
+        : data.character === 4 ? 'Hans'
+        : data.character === 5 ? 'Nina'
+        : 'Unknown',
+      id: data.character
+    }
     this.loadout = data.loadout;
     this.stats = data.stats;
   }
