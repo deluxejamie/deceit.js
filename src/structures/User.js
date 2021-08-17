@@ -1,3 +1,5 @@
+const Loadout = require('./Loadout');
+
 class User {
   constructor(data) {
     this.id = data.userId;
@@ -16,7 +18,7 @@ class User {
     this.repRank = data.repRank;
     this.banner = data.banner;
     this.perks = data.perks;
-    this.character = {
+    this.selectedCharacter = {
       name: data.character === 0 ? 'Alex'
         : data.character === 1 ? 'Chang'
         : data.character === 2 ? 'Lisa'
@@ -26,7 +28,7 @@ class User {
         : 'Unknown',
       id: data.character
     }
-    this.loadout = data.loadout;
+    this.loadout = new Loadout(data.loadout);
     this.stats = data.stats;
   }
 }
