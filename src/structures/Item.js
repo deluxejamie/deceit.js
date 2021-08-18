@@ -3,12 +3,10 @@ const items = require('../resources/items.json');
 class Item {
   constructor(data) {
 
-    console.log(data)
-
     const item = items.find(i => i['Global ID'] === data.id);
 
     this.id = item['Global ID'];
-    this.alias = item['Alias'];
+    this.alias = item['Alias'].replaceAll('_', ' ');
     this.rarity = {
       name: item['Rarity'],
       id: item['Rarity'] === 'Common' ? 0
@@ -25,7 +23,7 @@ class Item {
     this.event = item['Event'] ? {
       name: item['Event'],
       year: item['Event Year']
-    } : false;
+    } : null;
   }
 }
 
