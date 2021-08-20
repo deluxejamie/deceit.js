@@ -1,4 +1,5 @@
 const Loadout = require('./Loadout');
+const Perk = require('./Perk');
 
 class User {
   constructor(data) {
@@ -17,7 +18,7 @@ class User {
     this.eloRank = data.eloRank;
     this.repRank = data.repRank;
     this.banner = data.banner;
-    this.perks = data.perks;
+    this.perks = data.perks.map(perkId => perkId !== 0 ? new Perk({ id: perkId }) : null);
     this.selectedCharacter = {
       name: data.character === 0 ? 'Alex'
         : data.character === 1 ? 'Chang'
