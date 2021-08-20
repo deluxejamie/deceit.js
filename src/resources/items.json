@@ -105,7 +105,7 @@
     "Event": "Summer",
     "Event Year": 2020,
     "Collection ID": "",
-    "Vault": "FALSE"
+    "Vault": "TRUE"
   },
   {
     "Global ID": 11,
@@ -261,7 +261,7 @@
     "Event": "Summer",
     "Event Year": 2020,
     "Collection ID": "",
-    "Vault": "FALSE"
+    "Vault": "TRUE"
   },
   {
     "Global ID": 81934,
@@ -381,7 +381,7 @@
     "Event": "Summer",
     "Event Year": 2020,
     "Collection ID": "",
-    "Vault": "FALSE"
+    "Vault": "TRUE"
   },
   {
     "Global ID": 49172,
@@ -1149,7 +1149,7 @@
     "Event": "Summer",
     "Event Year": 2020,
     "Collection ID": "",
-    "Vault": "FALSE"
+    "Vault": "TRUE"
   },
   {
     "Global ID": 16443,
@@ -1161,7 +1161,7 @@
     "Event": "Summer",
     "Event Year": 2020,
     "Collection ID": "",
-    "Vault": "FALSE"
+    "Vault": "TRUE"
   },
   {
     "Global ID": 32828,
@@ -1173,7 +1173,7 @@
     "Event": "Summer",
     "Event Year": 2020,
     "Collection ID": "",
-    "Vault": "FALSE"
+    "Vault": "TRUE"
   },
   {
     "Global ID": 49213,
@@ -1579,6 +1579,78 @@
     "Base Reward": "FALSE",
     "Exclusive": "FALSE",
     "Event": "Easter",
+    "Event Year": 2021,
+    "Collection ID": "",
+    "Vault": "FALSE"
+  },
+  {
+    "Global ID": 109,
+    "Alias": "Floral_Flat_Cap",
+    "Rarity": "Rare",
+    "Default Unlock": "",
+    "Base Reward": "FALSE",
+    "Exclusive": "FALSE",
+    "Event": "Summer",
+    "Event Year": 2021,
+    "Collection ID": "",
+    "Vault": "FALSE"
+  },
+  {
+    "Global ID": 32878,
+    "Alias": "Desert_Police_Hat",
+    "Rarity": "Rare",
+    "Default Unlock": "",
+    "Base Reward": "FALSE",
+    "Exclusive": "FALSE",
+    "Event": "Summer",
+    "Event Year": 2021,
+    "Collection ID": "",
+    "Vault": "FALSE"
+  },
+  {
+    "Global ID": 49263,
+    "Alias": "Elegant_Trilby",
+    "Rarity": "Rare",
+    "Default Unlock": "",
+    "Base Reward": "FALSE",
+    "Exclusive": "FALSE",
+    "Event": "Summer",
+    "Event Year": 2021,
+    "Collection ID": "",
+    "Vault": "FALSE"
+  },
+  {
+    "Global ID": 82032,
+    "Alias": "Sombrero",
+    "Rarity": "Legendary",
+    "Default Unlock": "",
+    "Base Reward": "FALSE",
+    "Exclusive": "FALSE",
+    "Event": "Summer",
+    "Event Year": 2021,
+    "Collection ID": "",
+    "Vault": "FALSE"
+  },
+  {
+    "Global ID": 65649,
+    "Alias": "Swimming_Cap",
+    "Rarity": "Legendary",
+    "Default Unlock": "",
+    "Base Reward": "FALSE",
+    "Exclusive": "FALSE",
+    "Event": "Summer",
+    "Event Year": 2021,
+    "Collection ID": "",
+    "Vault": "FALSE"
+  },
+  {
+    "Global ID": 16498,
+    "Alias": "Headphones",
+    "Rarity": "Legendary",
+    "Default Unlock": "",
+    "Base Reward": "FALSE",
+    "Exclusive": "FALSE",
+    "Event": "Summer",
     "Event Year": 2021,
     "Collection ID": "",
     "Vault": "FALSE"
@@ -2412,6 +2484,42 @@
     "Vault": "FALSE"
   },
   {
+    "Global ID": 33817,
+    "Alias": "Oval_Sunglasses",
+    "Rarity": "Uncommon",
+    "Default Unlock": "",
+    "Base Reward": "FALSE",
+    "Exclusive": "FALSE",
+    "Event": "Summer",
+    "Event Year": 2021,
+    "Collection ID": "",
+    "Vault": "FALSE"
+  },
+  {
+    "Global ID": 66586,
+    "Alias": "Snorkel",
+    "Rarity": "Legendary",
+    "Default Unlock": "",
+    "Base Reward": "FALSE",
+    "Exclusive": "FALSE",
+    "Event": "Summer",
+    "Event Year": 2021,
+    "Collection ID": "",
+    "Vault": "FALSE"
+  },
+  {
+    "Global ID": 1051,
+    "Alias": "Cigar",
+    "Rarity": "Rare",
+    "Default Unlock": "",
+    "Base Reward": "FALSE",
+    "Exclusive": "FALSE",
+    "Event": "Summer",
+    "Event Year": 2021,
+    "Collection ID": "",
+    "Vault": "FALSE"
+  },
+  {
     "Global ID": 2049,
     "Alias": "Bahroo_Scrubs",
     "Rarity": "Uncommon",
@@ -2985,7 +3093,7 @@
     "Event": "Summer",
     "Event Year": 2020,
     "Collection ID": "",
-    "Vault": "FALSE"
+    "Vault": "TRUE"
   },
   {
     "Global ID": 2062,
@@ -4461,7 +4569,7 @@
     "Event": "Summer",
     "Event Year": 2020,
     "Collection ID": "",
-    "Vault": "FALSE"
+    "Vault": "TRUE"
   },
   {
     "Global ID": 2099,
@@ -4665,7 +4773,7 @@
     "Event": "Summer",
     "Event Year": 2020,
     "Collection ID": "",
-    "Vault": "FALSE"
+    "Vault": "TRUE"
   },
   {
     "Global ID": 34874,
@@ -5289,7 +5397,7 @@
     "Event": "Summer",
     "Event Year": 2020,
     "Collection ID": "",
-    "Vault": "FALSE"
+    "Vault": "TRUE"
   },
   {
     "Global ID": 18514,
@@ -5301,7 +5409,7 @@
     "Event": "Summer",
     "Event Year": 2020,
     "Collection ID": "",
-    "Vault": "FALSE"
+    "Vault": "TRUE"
   },
   {
     "Global ID": 34899,
@@ -5505,7 +5613,7 @@
     "Event": "Summer",
     "Event Year": 2020,
     "Collection ID": "",
-    "Vault": "FALSE"
+    "Vault": "TRUE"
   },
   {
     "Global ID": 2138,
@@ -6672,6 +6780,78 @@
     "Vault": "FALSE"
   },
   {
+    "Global ID": 2182,
+    "Alias": "Floral_Shirt",
+    "Rarity": "Rare",
+    "Default Unlock": "",
+    "Base Reward": "FALSE",
+    "Exclusive": "FALSE",
+    "Event": "Summer",
+    "Event Year": 2021,
+    "Collection ID": "",
+    "Vault": "FALSE"
+  },
+  {
+    "Global ID": 34952,
+    "Alias": "Desert_Uniform",
+    "Rarity": "Rare",
+    "Default Unlock": "",
+    "Base Reward": "FALSE",
+    "Exclusive": "FALSE",
+    "Event": "Summer",
+    "Event Year": 2021,
+    "Collection ID": "",
+    "Vault": "FALSE"
+  },
+  {
+    "Global ID": 51337,
+    "Alias": "Elegant",
+    "Rarity": "Rare",
+    "Default Unlock": "",
+    "Base Reward": "FALSE",
+    "Exclusive": "FALSE",
+    "Event": "Summer",
+    "Event Year": 2021,
+    "Collection ID": "",
+    "Vault": "FALSE"
+  },
+  {
+    "Global ID": 84106,
+    "Alias": "Hula_Girl",
+    "Rarity": "Legendary",
+    "Default Unlock": "",
+    "Base Reward": "FALSE",
+    "Exclusive": "FALSE",
+    "Event": "Summer",
+    "Event Year": 2021,
+    "Collection ID": "",
+    "Vault": "FALSE"
+  },
+  {
+    "Global ID": 67723,
+    "Alias": "Poolside",
+    "Rarity": "Legendary",
+    "Default Unlock": "",
+    "Base Reward": "FALSE",
+    "Exclusive": "FALSE",
+    "Event": "Summer",
+    "Event Year": 2021,
+    "Collection ID": "",
+    "Vault": "FALSE"
+  },
+  {
+    "Global ID": 18572,
+    "Alias": "Macho",
+    "Rarity": "Legendary",
+    "Default Unlock": "",
+    "Base Reward": "FALSE",
+    "Exclusive": "FALSE",
+    "Event": "Summer",
+    "Event Year": 2021,
+    "Collection ID": "",
+    "Vault": "FALSE"
+  },
+  {
     "Global ID": 6145,
     "Alias": "Arms_Crossed",
     "Rarity": "Common",
@@ -7017,7 +7197,7 @@
     "Event": "Summer",
     "Event Year": 2020,
     "Collection ID": "",
-    "Vault": "FALSE"
+    "Vault": "TRUE"
   },
   {
     "Global ID": 38932,
@@ -7029,7 +7209,7 @@
     "Event": "Summer",
     "Event Year": 2020,
     "Collection ID": "",
-    "Vault": "FALSE"
+    "Vault": "TRUE"
   },
   {
     "Global ID": 55317,
@@ -7476,6 +7656,30 @@
     "Vault": "FALSE"
   },
   {
+    "Global ID": 6197,
+    "Alias": "Bubble",
+    "Rarity": "Legendary",
+    "Default Unlock": "",
+    "Base Reward": "FALSE",
+    "Exclusive": "FALSE",
+    "Event": "Summer",
+    "Event Year": 2021,
+    "Collection ID": "",
+    "Vault": "FALSE"
+  },
+  {
+    "Global ID": 88118,
+    "Alias": "Proud",
+    "Rarity": "Rare",
+    "Default Unlock": "",
+    "Base Reward": "FALSE",
+    "Exclusive": "FALSE",
+    "Event": "Summer",
+    "Event Year": 2021,
+    "Collection ID": "",
+    "Vault": "FALSE"
+  },
+  {
     "Global ID": 56321,
     "Alias": "Alrighty_Then",
     "Rarity": "Rare",
@@ -7545,7 +7749,7 @@
     "Event": "Summer",
     "Event Year": 2020,
     "Collection ID": "",
-    "Vault": "FALSE"
+    "Vault": "TRUE"
   },
   {
     "Global ID": 7175,
@@ -7785,7 +7989,7 @@
     "Event": "Summer",
     "Event Year": 2020,
     "Collection ID": "",
-    "Vault": "FALSE"
+    "Vault": "TRUE"
   },
   {
     "Global ID": 23569,
@@ -8287,6 +8491,30 @@
     "Base Reward": "FALSE",
     "Exclusive": "FALSE",
     "Event": "Easter",
+    "Event Year": 2021,
+    "Collection ID": "",
+    "Vault": "FALSE"
+  },
+  {
+    "Global ID": 39990,
+    "Alias": "Quick_Sand",
+    "Rarity": "Legendary",
+    "Default Unlock": "",
+    "Base Reward": "FALSE",
+    "Exclusive": "FALSE",
+    "Event": "Summer",
+    "Event Year": 2021,
+    "Collection ID": "",
+    "Vault": "FALSE"
+  },
+  {
+    "Global ID": 72759,
+    "Alias": "Dropped",
+    "Rarity": "Rare",
+    "Default Unlock": "",
+    "Base Reward": "FALSE",
+    "Exclusive": "FALSE",
+    "Event": "Summer",
     "Event Year": 2021,
     "Collection ID": "",
     "Vault": "FALSE"
@@ -8832,6 +9060,42 @@
     "Vault": "FALSE"
   },
   {
+    "Global ID": 107566,
+    "Alias": "Crustacean",
+    "Rarity": "Uncommon",
+    "Default Unlock": "",
+    "Base Reward": "FALSE",
+    "Exclusive": "FALSE",
+    "Event": "Summer",
+    "Event Year": 2021,
+    "Collection ID": "",
+    "Vault": "FALSE"
+  },
+  {
+    "Global ID": 173103,
+    "Alias": "Wasp",
+    "Rarity": "Rare",
+    "Default Unlock": "",
+    "Base Reward": "FALSE",
+    "Exclusive": "FALSE",
+    "Event": "Summer",
+    "Event Year": 2021,
+    "Collection ID": "",
+    "Vault": "FALSE"
+  },
+  {
+    "Global ID": 123952,
+    "Alias": "Aquatic",
+    "Rarity": "Legendary",
+    "Default Unlock": "",
+    "Base Reward": "FALSE",
+    "Exclusive": "FALSE",
+    "Event": "Summer",
+    "Event Year": 2021,
+    "Collection ID": "",
+    "Vault": "FALSE"
+  },
+  {
     "Global ID": 3073,
     "Alias": "Olive",
     "Rarity": "Common",
@@ -9249,7 +9513,7 @@
     "Event": "Summer",
     "Event Year": 2020,
     "Collection ID": "",
-    "Vault": "FALSE"
+    "Vault": "TRUE"
   },
   {
     "Global ID": 3108,
@@ -9261,7 +9525,7 @@
     "Event": "Summer",
     "Event Year": 2020,
     "Collection ID": "",
-    "Vault": "FALSE"
+    "Vault": "TRUE"
   },
   {
     "Global ID": 3109,
@@ -9273,7 +9537,7 @@
     "Event": "Summer",
     "Event Year": 2020,
     "Collection ID": "",
-    "Vault": "FALSE"
+    "Vault": "TRUE"
   },
   {
     "Global ID": 3110,
@@ -9415,6 +9679,42 @@
     "Base Reward": "FALSE",
     "Exclusive": "FALSE",
     "Event": "Easter",
+    "Event Year": 2021,
+    "Collection ID": "",
+    "Vault": "FALSE"
+  },
+  {
+    "Global ID": 3122,
+    "Alias": "Ice_Lolly",
+    "Rarity": "Uncommon",
+    "Default Unlock": "",
+    "Base Reward": "FALSE",
+    "Exclusive": "FALSE",
+    "Event": "Summer",
+    "Event Year": 2021,
+    "Collection ID": "",
+    "Vault": "FALSE"
+  },
+  {
+    "Global ID": 3123,
+    "Alias": "Sand",
+    "Rarity": "Rare",
+    "Default Unlock": "",
+    "Base Reward": "FALSE",
+    "Exclusive": "FALSE",
+    "Event": "Summer",
+    "Event Year": 2021,
+    "Collection ID": "",
+    "Vault": "FALSE"
+  },
+  {
+    "Global ID": 3124,
+    "Alias": "Compass",
+    "Rarity": "Legendary",
+    "Default Unlock": "",
+    "Base Reward": "FALSE",
+    "Exclusive": "FALSE",
+    "Event": "Summer",
     "Event Year": 2021,
     "Collection ID": "",
     "Vault": "FALSE"
@@ -10005,7 +10305,7 @@
     "Event": "Summer",
     "Event Year": 2020,
     "Collection ID": "",
-    "Vault": "FALSE"
+    "Vault": "TRUE"
   },
   {
     "Global ID": 4146,
@@ -10017,7 +10317,7 @@
     "Event": "Summer",
     "Event Year": 2020,
     "Collection ID": "",
-    "Vault": "FALSE"
+    "Vault": "TRUE"
   },
   {
     "Global ID": 4147,
@@ -10029,7 +10329,7 @@
     "Event": "Summer",
     "Event Year": 2020,
     "Collection ID": "",
-    "Vault": "FALSE"
+    "Vault": "TRUE"
   },
   {
     "Global ID": 4148,
@@ -10159,6 +10459,42 @@
     "Base Reward": "FALSE",
     "Exclusive": "FALSE",
     "Event": "Easter",
+    "Event Year": 2021,
+    "Collection ID": "",
+    "Vault": "FALSE"
+  },
+  {
+    "Global ID": 4160,
+    "Alias": "Watermelon",
+    "Rarity": "Uncommon",
+    "Default Unlock": "",
+    "Base Reward": "FALSE",
+    "Exclusive": "FALSE",
+    "Event": "Summer",
+    "Event Year": 2021,
+    "Collection ID": "",
+    "Vault": "FALSE"
+  },
+  {
+    "Global ID": 4161,
+    "Alias": "Beach",
+    "Rarity": "Rare",
+    "Default Unlock": "",
+    "Base Reward": "FALSE",
+    "Exclusive": "FALSE",
+    "Event": "Summer",
+    "Event Year": 2021,
+    "Collection ID": "",
+    "Vault": "FALSE"
+  },
+  {
+    "Global ID": 4162,
+    "Alias": "Jade",
+    "Rarity": "Legendary",
+    "Default Unlock": "",
+    "Base Reward": "FALSE",
+    "Exclusive": "FALSE",
+    "Event": "Summer",
     "Event Year": 2021,
     "Collection ID": "",
     "Vault": "FALSE"
@@ -10617,7 +10953,7 @@
     "Event": "Summer",
     "Event Year": 2020,
     "Collection ID": "",
-    "Vault": "FALSE"
+    "Vault": "TRUE"
   },
   {
     "Global ID": 5159,
@@ -10629,7 +10965,7 @@
     "Event": "Summer",
     "Event Year": 2020,
     "Collection ID": "",
-    "Vault": "FALSE"
+    "Vault": "TRUE"
   },
   {
     "Global ID": 5160,
@@ -10641,7 +10977,7 @@
     "Event": "Summer",
     "Event Year": 2020,
     "Collection ID": "",
-    "Vault": "FALSE"
+    "Vault": "TRUE"
   },
   {
     "Global ID": 5161,
@@ -10820,6 +11156,42 @@
     "Exclusive": "TRUE",
     "Event": "",
     "Event Year": "",
+    "Collection ID": "",
+    "Vault": "FALSE"
+  },
+  {
+    "Global ID": 5176,
+    "Alias": "Cutlass",
+    "Rarity": "Legendary",
+    "Default Unlock": "",
+    "Base Reward": "FALSE",
+    "Exclusive": "FALSE",
+    "Event": "Summer",
+    "Event Year": 2021,
+    "Collection ID": "",
+    "Vault": "FALSE"
+  },
+  {
+    "Global ID": 5177,
+    "Alias": "Karambit",
+    "Rarity": "Rare",
+    "Default Unlock": "",
+    "Base Reward": "FALSE",
+    "Exclusive": "FALSE",
+    "Event": "Summer",
+    "Event Year": 2021,
+    "Collection ID": "",
+    "Vault": "FALSE"
+  },
+  {
+    "Global ID": 5178,
+    "Alias": "Ice_Cream",
+    "Rarity": "Uncommon",
+    "Default Unlock": "",
+    "Base Reward": "FALSE",
+    "Exclusive": "FALSE",
+    "Event": "Summer",
+    "Event Year": 2021,
     "Collection ID": "",
     "Vault": "FALSE"
   },
@@ -11265,7 +11637,7 @@
     "Event": "Summer",
     "Event Year": 2020,
     "Collection ID": "",
-    "Vault": "FALSE"
+    "Vault": "TRUE"
   },
   {
     "Global ID": 8230,
@@ -11277,7 +11649,7 @@
     "Event": "Summer",
     "Event Year": 2020,
     "Collection ID": "",
-    "Vault": "FALSE"
+    "Vault": "TRUE"
   },
   {
     "Global ID": 8231,
@@ -11289,7 +11661,7 @@
     "Event": "Summer",
     "Event Year": 2020,
     "Collection ID": "",
-    "Vault": "FALSE"
+    "Vault": "TRUE"
   },
   {
     "Global ID": 8232,
@@ -11301,7 +11673,7 @@
     "Event": "Summer",
     "Event Year": 2020,
     "Collection ID": "",
-    "Vault": "FALSE"
+    "Vault": "TRUE"
   },
   {
     "Global ID": 8233,
@@ -11313,7 +11685,7 @@
     "Event": "Summer",
     "Event Year": 2020,
     "Collection ID": "",
-    "Vault": "FALSE"
+    "Vault": "TRUE"
   },
   {
     "Global ID": 8234,
@@ -11325,7 +11697,7 @@
     "Event": "Summer",
     "Event Year": 2020,
     "Collection ID": "",
-    "Vault": "FALSE"
+    "Vault": "TRUE"
   },
   {
     "Global ID": 8238,
@@ -11539,6 +11911,66 @@
     "Base Reward": "FALSE",
     "Exclusive": "FALSE",
     "Event": "Easter",
+    "Event Year": 2021,
+    "Collection ID": "",
+    "Vault": "FALSE"
+  },
+  {
+    "Global ID": 8256,
+    "Alias": "Aviators",
+    "Rarity": "Common",
+    "Default Unlock": "",
+    "Base Reward": "FALSE",
+    "Exclusive": "FALSE",
+    "Event": "Summer",
+    "Event Year": 2021,
+    "Collection ID": "",
+    "Vault": "FALSE"
+  },
+  {
+    "Global ID": 8257,
+    "Alias": "Seashell",
+    "Rarity": "Common",
+    "Default Unlock": "",
+    "Base Reward": "FALSE",
+    "Exclusive": "FALSE",
+    "Event": "Summer",
+    "Event Year": 2021,
+    "Collection ID": "",
+    "Vault": "FALSE"
+  },
+  {
+    "Global ID": 8258,
+    "Alias": "Watermelon",
+    "Rarity": "Common",
+    "Default Unlock": "",
+    "Base Reward": "FALSE",
+    "Exclusive": "FALSE",
+    "Event": "Summer",
+    "Event Year": 2021,
+    "Collection ID": "",
+    "Vault": "FALSE"
+  },
+  {
+    "Global ID": 8259,
+    "Alias": "Angry_Crabby",
+    "Rarity": "Common",
+    "Default Unlock": "",
+    "Base Reward": "FALSE",
+    "Exclusive": "FALSE",
+    "Event": "Summer",
+    "Event Year": 2021,
+    "Collection ID": "",
+    "Vault": "FALSE"
+  },
+  {
+    "Global ID": 8260,
+    "Alias": "Heart_In_The_Sand",
+    "Rarity": "Common",
+    "Default Unlock": "",
+    "Base Reward": "FALSE",
+    "Exclusive": "FALSE",
+    "Event": "Summer",
     "Event Year": 2021,
     "Collection ID": "",
     "Vault": "FALSE"
@@ -13244,6 +13676,54 @@
     "Exclusive": "TRUE",
     "Event": "",
     "Event Year": "",
+    "Collection ID": "",
+    "Vault": "FALSE"
+  },
+  {
+    "Global ID": 10385,
+    "Alias": "Watermelon",
+    "Rarity": "Common",
+    "Default Unlock": "",
+    "Base Reward": "FALSE",
+    "Exclusive": "FALSE",
+    "Event": "Summer",
+    "Event Year": 2021,
+    "Collection ID": "",
+    "Vault": "FALSE"
+  },
+  {
+    "Global ID": 10386,
+    "Alias": "Turtle",
+    "Rarity": "Common",
+    "Default Unlock": "",
+    "Base Reward": "FALSE",
+    "Exclusive": "FALSE",
+    "Event": "Summer",
+    "Event Year": 2021,
+    "Collection ID": "",
+    "Vault": "FALSE"
+  },
+  {
+    "Global ID": 10387,
+    "Alias": "Lemon",
+    "Rarity": "Common",
+    "Default Unlock": "",
+    "Base Reward": "FALSE",
+    "Exclusive": "FALSE",
+    "Event": "Summer",
+    "Event Year": 2021,
+    "Collection ID": "",
+    "Vault": "FALSE"
+  },
+  {
+    "Global ID": 10389,
+    "Alias": "Steak",
+    "Rarity": "Common",
+    "Default Unlock": "",
+    "Base Reward": "FALSE",
+    "Exclusive": "TRUE",
+    "Event": "Summer",
+    "Event Year": 2021,
     "Collection ID": "",
     "Vault": "FALSE"
   }
