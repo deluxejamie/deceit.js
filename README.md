@@ -17,11 +17,11 @@ const Deceit = require('deceit.js');
 Deceit.users.fetch('3290992').then(user => console.log(user.username, user.level));
 ```
 
-Log the reputation highscores:
+Log the current perk tree:
 ```javascript
 const Deceit = require('deceit.js');
 
-Deceit.highscores.fetch('rep').then(console.log);
+Deceit.perkTrees.fetch().then(console.log);
 ```
 
 Log the legacy elo highscores:
