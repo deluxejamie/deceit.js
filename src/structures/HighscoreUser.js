@@ -7,6 +7,11 @@ class HighscoreUser {
     this.value = data.value;
     this.place = data.rank + 1;
   }
+  
+  async fetch({ legacy } = {}) {
+    return await Users.fetch(this.id, legacy);
+  }
+  
 }
 
 module.exports = HighscoreUser;
