@@ -1,4 +1,5 @@
 const items = require('../resources/items.json');
+const ItemsCollection = require('./ItemsCollection');
 
 class Item {
   constructor(data) {
@@ -13,17 +14,21 @@ class Item {
         : item['Rarity'] === 'Uncommon' ? 1
         : item['Rarity'] === 'Rare' ? 2
         : item['Rarity'] === 'Legendary' ? 3
-        : 'Unknown'
+        : null
     }
     this.default = item['Default Unlock'] === 'TRUE' ? true : false;
     this.vault = item['Vault'] === 'TRUE' ? true : false;
     this.base = item['Base Reward'] === 'TRUE' ? true : false;
     this.exclusive = item['Exclusive'] === 'TRUE' ? true : false;
-    this.collection = item['Collection ID'] || null;
+    this.collectionId = item['Collection ID'] || null;
     this.event = item['Event'] ? {
       name: item['Event'],
       year: item['Event Year']
     } : null;
+  }
+
+  get collection() {
+    return new ItemsCollection({ id: this.collectionId }, Item);
   }
 }
 
