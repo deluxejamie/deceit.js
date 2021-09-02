@@ -2,7 +2,7 @@ const Loadout = require('./Loadout');
 const Perk = require('./Perk');
 
 class User {
-  constructor(data) {
+  constructor(data, Users) {
     this.id = data.userId;
     this.username = data.name;
     this.elo = data.elo;
@@ -31,6 +31,12 @@ class User {
     }
     this.loadout = new Loadout(data.loadout);
     this.stats = data.stats;
+
+    Object.defineProperty(this, 'users', { value: Users });
+  }
+
+  async fetch({ legacy } = {}) {
+    return await this.users.fetch(this.id, legacy);
   }
 }
 
