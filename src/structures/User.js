@@ -19,25 +19,27 @@ class User {
     this.repRank = data.repRank;
     this.banner = data.banner;
     this.perks = data.perks.map(perkId => perkId !== 0 ? new Perk({ id: perkId }) : null);
-    this.selectedCharacter = {
-      name: data.character === 0 ? 'Alex'
-        : data.character === 1 ? 'Chang'
-        : data.character === 2 ? 'Lisa'
-        : data.character === 3 ? 'Rachel'
-        : data.character === 4 ? 'Hans'
-        : data.character === 5 ? 'Nina'
-        : 'Unknown',
-      id: data.character
-    }
+    this.selectedCharacter = data.character;
     this.loadout = new Loadout(data.loadout);
     this.stats = data.stats;
 
     Object.defineProperty(this, 'users', { value: Users });
   }
 
+  get selectedCharacterName() {
+    return this.selectedCharacter === 0 ? 'Alex'
+      : this.selectedCharacter === 1 ? 'Chang'
+      : this.selectedCharacter === 2 ? 'Lisa'
+      : this.selectedCharacter === 3 ? 'Rachel'
+      : this.selectedCharacter === 4 ? 'Hans'
+      : this.selectedCharacter === 5 ? 'Nina'
+      : 'Unknown',
+  }
+  
   async fetch({ legacy } = {}) {
     return await this.users.fetch(this.id, legacy);
   }
+  
 }
 
 module.exports = User;
