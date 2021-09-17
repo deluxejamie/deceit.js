@@ -18,7 +18,7 @@ class User {
     this.eloRank = data.eloRank;
     this.repRank = data.repRank;
     this.banner = data.banner;
-    this.perks = data.perks.map(perkId => perkId !== 0 ? new Perk({ id: perkId }) : null);
+    this.perks = data.perks.map(perkId => perkId !== -1 ? new Perk({ id: perkId }) : -1);
     this.selectedCharacter = data.character;
     this.loadout = new Loadout(data.loadout);
     this.stats = data.stats;
@@ -33,13 +33,13 @@ class User {
       : this.selectedCharacter === 3 ? 'Rachel'
       : this.selectedCharacter === 4 ? 'Hans'
       : this.selectedCharacter === 5 ? 'Nina'
-      : 'Unknown',
+      : 'Unknown';
   }
-  
+
   async fetch({ legacy } = {}) {
     return await this.users.fetch(this.id, legacy);
   }
-  
+
 }
 
 module.exports = User;
