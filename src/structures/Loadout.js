@@ -3,7 +3,6 @@ const Item = require('./Item');
 
 class Loadout {
   constructor(data) {
-    console.log(data)
     this.alex = new Equipment(data[0]);
     this.chang = new Equipment(data[1]);
     this.lisa = new Equipment(data[2]);
