@@ -8,7 +8,7 @@ class User {
     this.elo = data.elo;
     this.rank = 20 - data.rank;
     this.marks = data.marks;
-    this.xp = data.experience;
+    this.tickets = data.tickets;
     this.level = data.level;
     this.prestige = data.prestige;
     this.emblem = data.emblem;
