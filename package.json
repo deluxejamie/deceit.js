@@ -1,6 +1,6 @@
 {
   "name": "deceit.js",
-  "version": "1.2.3",
+  "version": "1.2.4",
   "description": "Javascript library for the Deceit API.",
   "main": "./src/index.js",
   "repository": {
