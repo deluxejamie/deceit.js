@@ -1,6 +1,6 @@
 const Highscore = require('../structures/Highscore');
 const ELOHighscore = require('../structures/ELOHighscore');
-const XPHighscore = require('../structures/XPHighscore');
+const TicketHighscore = require('../structures/TicketHighscore');
 const ReputationHighscore = require('../structures/ReputationHighscore');
 const Endpoints = require('../util/Endpoints');
 const fetch = require('node-fetch');
@@ -13,13 +13,13 @@ class Highscores {
   * @returns {Promise<Object[]>}
   */
   static async fetch(type, { legacy } = {}) {
-    const request = await fetch((!legacy ? Endpoints.HIGHSCORES : Endpoints.LEGACY_HIGHSCORES).concat(`?type=${type}`));
+    const request = await fetch((!legacy ? Endpoints.HIGHSCORES : Endpoints.LEGACY_HIGHSCORES).concat(`?type=${type === 'tickets' ? 'xp' : type}`));
     const response = await request.json();
     if(request.status !== 200) throw new Error(response.error);
 
     const HighscoreType
       = type === 'elo' ? ELOHighscore
-      : type === 'xp' ? XPHighscore
+      : type === 'tickets' ? TicketHighscore
       : type === 'rep' ? ReputationHighscore
       : Highscore;
 
