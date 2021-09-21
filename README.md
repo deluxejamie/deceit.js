@@ -35,6 +35,5 @@ Log the legacy party informations:
 ```javascript
 const Deceit = require('deceit.js');
 
-Deceit.parties.fetch({ legacy: true }).then(party => console.log(party.games));
+Deceit.parties.fetch({ legacy: true }).then(party => console.log(party.availableServers));
 ```
-
