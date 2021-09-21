@@ -12,8 +12,8 @@ class Highscores {
   * @param {string} type The type of the highscores
   * @returns {Promise<Object[]>}
   */
-  static async fetch(type, { legacy } = {}) {
-    const request = await fetch((!legacy ? Endpoints.HIGHSCORES : Endpoints.LEGACY_HIGHSCORES).concat(`?type=${type === 'tickets' ? 'xp' : type}`));
+  static async fetch(type) {
+    const request = await fetch(`${Endpoints.HIGHSCORES}?type=${type === 'tickets' ? 'xp' : type}`);
     const response = await request.json();
     if(request.status !== 200) throw new Error(response.error);
 

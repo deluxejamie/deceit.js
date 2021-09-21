@@ -10,9 +10,9 @@ class Users {
   * @param {(string|integer)} id User id
   * @returns {Promise<Object>}
   */
-  static async fetch(id, { legacy } = {}) {
+  static async fetch(id) {
     const type = id.length === 17 ? 'steamId' : 'userId';
-    const request = await fetch((!legacy ? Endpoints.USER_STATS : Endpoints.LEGACY_USER_STATS).concat(`?${type}=${id}`));
+    const request = await fetch(`${Endpoints.USER_STATS}?${type}=${id}`);
     const response = await request.json();
 
     if(request.status !== 200) throw new Error(response.error);

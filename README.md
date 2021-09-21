@@ -24,16 +24,16 @@ const Deceit = require('deceit.js');
 Deceit.perkTrees.fetch().then(console.log);
 ```
 
-Log the legacy elo highscores:
+Log ticket highscores:
 ```javascript
 const Deceit = require('deceit.js');
 
-Deceit.highscores.fetch('elo', { legacy: true }).then(console.log);
+Deceit.highscores.fetch('tickets').then(console.log);
 ```
 
-Log the legacy party informations:
+Log servers informations:
 ```javascript
 const Deceit = require('deceit.js');
 
-Deceit.parties.fetch({ legacy: true }).then(party => console.log(party.availableServers));
+Deceit.parties.fetch().then(party => console.log(party.availableServers));
 ```

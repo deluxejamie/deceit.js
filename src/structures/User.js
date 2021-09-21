@@ -36,8 +36,8 @@ class User {
       : 'Unknown';
   }
 
-  async fetch({ legacy } = {}) {
-    return await this.users.fetch(this.id, legacy);
+  async fetch() {
+    return await this.users.fetch(this.id);
   }
 
 }

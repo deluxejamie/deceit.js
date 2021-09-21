@@ -8,8 +8,8 @@ class Parties {
   * Fetch server party informations
   * @returns {Promise<Object>}
   */
-  static async fetch({ legacy } = {}) {
-    const request = await fetch(!legacy ? Endpoints.PARTY : Endpoints.LEGACY_PARTY);
+  static async fetch() {
+    const request = await fetch(Endpoints.PARTY);
     const response = await request.json();
 
     return new Party(response);

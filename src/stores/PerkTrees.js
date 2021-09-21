@@ -10,7 +10,7 @@ class PerkTrees {
   * @returns {Promise<Object>}
   */
   static async fetch(id) {
-    const request = await fetch(Endpoints.PERK_TREE.concat(id ? `?id=${id}` : ''));
+    const request = await fetch(`${Endpoints.PERK_TREE}${id ? `?id=${id}` : ''}`);
     const response = await request.json();
 
     if(request.status !== 200) throw new Error(response.error);
