@@ -13,8 +13,8 @@ class User {
     this.prestige = data.prestige;
     this.emblem = data.emblem;
     this.reputation = data.reputation;
-    this.dailyXp = data.dailyXp;
-    this.dailyXpRank = data.dailyXpRank;
+    this.dailyTickets = data.dailyXp;
+    this.dailyTicketsRank = data.dailyXpRank;
     this.eloRank = data.eloRank;
     this.repRank = data.repRank;
     this.banner = data.banner;
