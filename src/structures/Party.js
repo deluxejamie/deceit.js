@@ -1,6 +1,9 @@
 class Party {
   constructor(data) {
     this.servers = data[Object.keys(data)[0]];
+    this.totalRankedQueue = this.servers.rankedQueuedClientCount;
+    this.totalCasualQueue = this.servers.casualQueuedClientCount;
+    this.totalCasualLobbies = this.servers.casualQueuedPartyCount;
     this.clusters = data.clusters;
     this.connectionCount = data.connectionCount;
     this.clientCount = data.clientCount;
@@ -21,7 +24,15 @@ class Party {
 
   get availableServers() {
     const servers = {};
-    this.availableRegions.forEach(r => servers[r] = this.servers[`Region ${this.regions.indexOf(r)}`]);
+    this.availableRegions.forEach(region => {
+      const server = this.servers[`Region ${this.regions.indexOf(region)}`];
+      servers[region] = {
+        gameCount: server.gameCount,
+        rankedQueue: server.rankedQueuedClientCount,
+        casualQueue: server.casualQueuedClientCount,
+        casualLobbies: server.casualQueuedPartyCount
+      }
+    });
     return servers;
   }
 
