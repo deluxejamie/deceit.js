@@ -1,13 +1,17 @@
+const Server = require('./Server');
+
 class Party {
   constructor(data) {
-    this.servers = data[Object.keys(data)[0]];
-    this.totalRankedQueue = this.servers.rankedQueuedClientCount;
-    this.totalCasualQueue = this.servers.casualQueuedClientCount;
-    this.totalCasualLobbies = this.servers.casualQueuedPartyCount;
-    this.clusters = data.clusters;
+    this.totalRankedQueue = data[Object.keys(data)[0]].rankedQueuedClientCount;
+    this.totalCasualQueue = data[Object.keys(data)[0]].casualQueuedClientCount;
+    this.totalCasualLobbies = data[Object.keys(data)[0]].casualQueuedPartyCount;
     this.connectionCount = data.connectionCount;
     this.clientCount = data.clientCount;
-    this.gameStartupCounts = data.gameStartupCounts;
+    this.servers = this.regions.reduce((a, v) => {
+      return ({ ...a, [v]: new Server(data[Object.keys(data)[0]][`Region ${this.regions.indexOf(v)}`])});
+    }, {});
+
+    Object.defineProperty({}, 'clusters', { value: data.clusters });
   }
 
   get regions() {
@@ -17,24 +21,13 @@ class Party {
   }
 
   get availableRegions() {
-    return Object.keys(this.servers)
-      .filter(o => typeof this.servers[o] === 'object')
-      .map(o => this.regions[o.substring('Region '.length)]);
+    return Object.keys(this.servers).filter(region => this.servers[region].gameCount);
   }
 
   get availableServers() {
-    const servers = {};
-    this.availableRegions.forEach(region => {
-      const server = this.servers[`Region ${this.regions.indexOf(region)}`];
-      servers[region] = {
-        gameCount: server.gameCount,
-        rankedQueue: server.rankedQueuedClientCount,
-        casualQueue: server.casualQueuedClientCount,
-        casualLobbies: server.casualQueuedPartyCount
-      }
-    });
-    return servers;
+    return Object.fromEntries(Object.entries(this.servers).filter(([region]) => this.availableRegions.includes(region)));
   }
 
 }
+
 module.exports = Party;
