@@ -2,7 +2,6 @@ const items = require('../resources/items.json');
 
 class ItemsCollection {
   constructor(data, Item) {
-
     const collection = items.filter(i => i['Collection ID'] === data.id);
 
     this.id = data.id;
