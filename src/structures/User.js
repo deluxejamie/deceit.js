@@ -19,12 +19,12 @@ class User {
     this.repRank = data.repRank;
     this.banner = data.banner;
     this.perks = data.perks.map(perkId => perkId !== -1 ? new Perk({ id: perkId }) : -1);
-    this.selectedCharacter = data.selectedCharacter === 0 ? 'Alex'
-      : data.selectedCharacter === 1 ? 'Chang'
-      : data.selectedCharacter === 2 ? 'Lisa'
-      : data.selectedCharacter === 3 ? 'Rachel'
-      : data.selectedCharacter === 4 ? 'Hans'
-      : data.selectedCharacter === 5 ? 'Nina'
+    this.selectedCharacter = data.character === 0 ? 'Alex'
+      : data.character === 1 ? 'Chang'
+      : data.character === 2 ? 'Lisa'
+      : data.character === 3 ? 'Rachel'
+      : data.character === 4 ? 'Hans'
+      : data.character === 5 ? 'Nina'
       : null;
     this.loadout = new Loadout(data.loadout);
     this.stats = data.stats;
@@ -38,7 +38,7 @@ class User {
       : this.selectedCharacter === 'Lisa' ? 2
       : this.selectedCharacter === 'Rachel' ? 3
       : this.selectedCharacter === 'Hans' ? 4
-      : this.selectedCharacter ==== 'Nina' ? 5
+      : this.selectedCharacter === 'Nina' ? 5
       : null;
   }
 
