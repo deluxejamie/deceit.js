@@ -8,7 +8,9 @@ class Server {
     }
   }
 
-
+  get available() {
+    return !!this.gameCount;
+  }
 
 }
 module.exports = Server;
