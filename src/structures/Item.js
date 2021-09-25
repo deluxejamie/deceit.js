@@ -8,11 +8,7 @@ class Item {
 
     this.id = item['Global ID'];
     this.alias = item['Alias'].replaceAll('_', ' ');
-    this._rarity = item['Rarity'] === 'Common' ? 0
-      : item['Rarity'] === 'Uncommon' ? 1
-      : item['Rarity'] === 'Rare' ? 2
-      : item['Rarity'] === 'Legendary' ? 3
-      : null;
+    this.rarity = item['Rarity'];
     this.default = item['Default Unlock'] === 'TRUE' ? true : false;
     this.vault = item['Vault'] === 'TRUE' ? true : false;
     this.base = item['Base Reward'] === 'TRUE' ? true : false;
@@ -24,11 +20,11 @@ class Item {
     } : null;
   }
 
-  get rarity() {
-    return this._rarity === 0 ? 'Common'
-      : this._rarity === 1 ? 'Uncommon'
-      : this._rarity === 2 ? 'Rare'
-      : this._rarity === 3 ? 'Legendary'
+  get _rarity() {
+    return this.rarity === 'Common' ? 0
+      : this.rarity === 'Uncommon' ? 1
+      : this.rarity === 'Rare' ? 2
+      : this.rarity === 'Legendary' ? 3
       : null;
   }
 
