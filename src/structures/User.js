@@ -33,7 +33,7 @@ class User {
       : this.selectedCharacter === 3 ? 'Rachel'
       : this.selectedCharacter === 4 ? 'Hans'
       : this.selectedCharacter === 5 ? 'Nina'
-      : 'Unknown';
+      : null;
   }
 
   async fetch() {
