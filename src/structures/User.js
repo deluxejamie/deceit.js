@@ -19,20 +19,26 @@ class User {
     this.repRank = data.repRank;
     this.banner = data.banner;
     this.perks = data.perks.map(perkId => perkId !== -1 ? new Perk({ id: perkId }) : -1);
-    this.selectedCharacter = data.character;
+    this.selectedCharacter = data.selectedCharacter === 0 ? 'Alex'
+      : data.selectedCharacter === 1 ? 'Chang'
+      : data.selectedCharacter === 2 ? 'Lisa'
+      : data.selectedCharacter === 3 ? 'Rachel'
+      : data.selectedCharacter === 4 ? 'Hans'
+      : data.selectedCharacter === 5 ? 'Nina'
+      : null;
     this.loadout = new Loadout(data.loadout);
     this.stats = data.stats;
 
     Object.defineProperty(this, 'users', { value: Users });
   }
 
-  get selectedCharacterName() {
-    return this.selectedCharacter === 0 ? 'Alex'
-      : this.selectedCharacter === 1 ? 'Chang'
-      : this.selectedCharacter === 2 ? 'Lisa'
-      : this.selectedCharacter === 3 ? 'Rachel'
-      : this.selectedCharacter === 4 ? 'Hans'
-      : this.selectedCharacter === 5 ? 'Nina'
+  get _selectedCharacter() {
+    return this.selectedCharacter === 'Alex' ? 0
+      : this.selectedCharacter === 'Chang' ? 1
+      : this.selectedCharacter === 'Lisa' ? 2
+      : this.selectedCharacter === 'Rachel' ? 3
+      : this.selectedCharacter === 'Hans' ? 4
+      : this.selectedCharacter ==== 'Nina' ? 5
       : null;
   }
 
