@@ -1,5 +1,7 @@
 class Server {
-  constructor(data) {
+  constructor(name, data) {
+    this.name = name;
+
     if(data) {
       this.gameCount = data.gameCount;
       this.rankedQueue = data.rankedQueuedClientCount;
@@ -13,4 +15,5 @@ class Server {
   }
 
 }
+
 module.exports = Server;

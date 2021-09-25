@@ -8,7 +8,7 @@ class Party {
     this.connectionCount = data.connectionCount;
     this.clientCount = data.clientCount;
     this.servers = this.regions.reduce((a, v) => {
-      return ({ ...a, [v]: new Server(data[Object.keys(data)[0]][`Region ${this.regions.indexOf(v)}`])});
+      return ({ ...a, [v]: new Server(v, data[Object.keys(data)[0]][`Region ${this.regions.indexOf(v)}`])});
     }, {});
 
     Object.defineProperty({}, 'clusters', { value: data.clusters });
