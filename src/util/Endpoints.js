@@ -8,10 +8,6 @@ class Endpoints {
     return 'https://live.deceit.gg/hiscores'
   }
 
-  static get PERK_TREE() {
-    return 'https://live.deceit.gg/perkTree'
-  }
-
   static get PARTY() {
     return 'https://live.deceit.gg/party'
   }

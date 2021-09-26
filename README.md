@@ -17,13 +17,6 @@ const Deceit = require('deceit.js');
 Deceit.users.fetch('3290992').then(user => console.log(user.username, user.level));
 ```
 
-Log the current perk tree:
-```javascript
-const Deceit = require('deceit.js');
-
-Deceit.perkTrees.fetch().then(console.log);
-```
-
 Log ticket highscores:
 ```javascript
 const Deceit = require('deceit.js');
