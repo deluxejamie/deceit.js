@@ -27,9 +27,9 @@ class Party {
   get availableServers() {
     return Object.fromEntries(Object.entries(this.servers).filter(([region]) => this.availableRegions.includes(region)));
   }
-  
+
   get availableServersWithRankedQueue() {
-    return this.servers.filter(s => s.rankedQueue);
+    return Object.fromEntries(Object.entries(this.servers).filter(([region, server]) => server.rankedQueue));
   }
 
 }
