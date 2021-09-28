@@ -5,8 +5,7 @@ class Party {
     this.totalRankedQueue = data[Object.keys(data)[0]].rankedQueuedClientCount;
     this.totalCasualQueue = data[Object.keys(data)[0]].casualQueuedClientCount;
     this.totalCasualLobbies = data[Object.keys(data)[0]].casualQueuedPartyCount;
-    this.connectionCount = data.connectionCount;
-    this.clientCount = data.clientCount;
+    this.playerCount = data[Object.keys(data)[0]].clientCount;
     this.servers = this.regions.reduce((a, v) => {
       return ({ ...a, [v]: new Server(v, data[Object.keys(data)[0]][`Region ${this.regions.indexOf(v)}`])});
     }, {});
