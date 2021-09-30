@@ -1,8 +1,8 @@
 const Highscore = require('./Highscore');
 
 class TicketHighscore extends Highscore {
-  constructor(data) {
-    super(data);
+  constructor(data, Highscores) {
+    super(data, Highscores);
   }
 }
 

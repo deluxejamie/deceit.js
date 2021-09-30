@@ -6,8 +6,10 @@ const HighscoreUser = require('../structures/HighscoreUser');
  */
 
 class Highscore {
-  constructor(data) {
+  constructor(data, Highscores) {
     this.entries = data.entries.map(e => new HighscoreUser(e));
+
+    Object.defineProperty(this, 'highscores', { value: Highscores });
   }
 
   /**
@@ -15,7 +17,9 @@ class Highscore {
    * @returns {Object}
    */
   get type() {
-    return this.constructor;
+    return this.constructor.name === 'ELOHighscore' ? 'elo'
+      : this.constructor.name === 'TicketHighscore' ? 'tickets'
+      : 'rep'
   }
 
   /**
@@ -50,7 +54,7 @@ class Highscore {
   getPlace(index) {
     return this.entries.find(e => e.place == index);
   }
-  
+
   /**
    * Get users between two places of the highscores
    * @param {(string|integer)} startIndex Start index of the places range
@@ -59,6 +63,10 @@ class Highscore {
    */
   getRangePlaces(startIndex, endIndex) {
     return this.entries.slice(startIndex - 1, endIndex);
+  }
+
+  async fetch() {
+    return await this.highscores.fetch(this.type);
   }
 
 }

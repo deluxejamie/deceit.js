@@ -23,7 +23,7 @@ class Highscores {
       : type === 'rep' ? ReputationHighscore
       : Highscore;
 
-    return new HighscoreType({ entries: response });
+    return new HighscoreType({ entries: response }, Highscores);
   }
 
 }
