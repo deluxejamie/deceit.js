@@ -5,7 +5,7 @@ class User {
   constructor(data, Users) {
     this.id = data.userId;
     this.username = data.name;
-    this.elo = data.elo;
+    this.elo = Math.round(data.elo);
     this.rank = 20 - data.rank;
     this.marks = data.marks;
     this.tickets = data.tickets;
