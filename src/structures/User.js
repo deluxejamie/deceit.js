@@ -18,7 +18,7 @@ class User {
     this.eloRank = data.eloRank;
     this.repRank = data.repRank;
     this.banner = data.banner;
-    this.perks = data.perks.map(perkId => perkId !== -1 ? new Perk({ id: perkId }) : -1);
+    this.perks = data.perks.map(perkId => perkId !== -1 ? new Perk({ id: perkId }) : null);
     this.selectedCharacter = data.character === 0 ? 'Alex'
       : data.character === 1 ? 'Chang'
       : data.character === 2 ? 'Lisa'
