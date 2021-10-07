@@ -27,7 +27,7 @@ class Highscore {
    * @returns {integer}
    */
   get top10Requirement() {
-    return this.entries.find(e => e.place === 10).value;
+    return this.entries.find(e => e.place === 10)?.value || null;
   }
 
   /**
@@ -35,7 +35,7 @@ class Highscore {
    * @returns {integer}
    */
   get top100Requirement() {
-    return this.entries.find(e => e.place === 100).value;
+    return this.entries.find(e => e.place === 100)?.value || null;
   }
 
   /**
@@ -43,7 +43,7 @@ class Highscore {
    * @returns {HighscoreUser}
    */
   get firstPlace() {
-    return this.entries.find(e => e.place == 1);
+    return this.entries.find(e => e.place == 1) || null;
   }
 
   /**
@@ -52,7 +52,7 @@ class Highscore {
    * @returns {HighscoreUser}
    */
   getPlace(index) {
-    return this.entries.find(e => e.place == index);
+    return this.entries.find(e => e.place == index) || null;
   }
 
   /**
