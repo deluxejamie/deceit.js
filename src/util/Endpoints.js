@@ -9,7 +9,7 @@ class Endpoints {
   }
 
   static get PARTY() {
-    return 'https://live.deceit.gg/party'
+    return 'https://live.deceit.gg/queues'
   }
 
 }
