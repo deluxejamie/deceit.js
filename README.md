@@ -1,5 +1,5 @@
 ## About
-deceit.js is a [Node.js](https://nodejs.org) module to interact with the [Deceit](https://playdeceit.com/) API.
+deceit.js is a [Node.js](https://nodejs.org) module to interact with the [Deceit 1](https://deceit.gg) API.
 
 ## Installation
 
@@ -10,23 +10,23 @@ npm install deceit.js
 
 ## Example usage
 
-Log the username and level of the user with id `#3290992`:
+Log the username and level of the user with id `#6997076`:
 ```javascript
-const Deceit = require('deceit.js');
+const {users = require('deceit.js');
 
-Deceit.users.fetch('3290992').then(user => console.log(user.username, user.level));
+users.fetch('6997076').then(user => console.log(user.username, user.level));
 ```
 
 Log ticket highscores:
 ```javascript
-const Deceit = require('deceit.js');
+const {highscores} = require('deceit.js');
 
-Deceit.highscores.fetch('tickets').then(console.log);
+highscores.fetch('tickets').then(console.log);
 ```
 
 Log servers informations:
 ```javascript
-const Deceit = require('deceit.js');
+const {parties} = require('deceit.js');
 
-Deceit.parties.fetch().then(party => console.log(party.availableServers));
+parties.fetch().then(party => console.log(party.availableServers));
 ```
