@@ -12,7 +12,7 @@ npm install deceit.js
 
 Log the username and level of the user with id `#6997076`:
 ```javascript
-const {users = require('deceit.js');
+const {users} = require('deceit.js');
 
 users.fetch('6997076').then(user => console.log(user.username, user.level));
 ```
