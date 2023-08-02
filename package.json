@@ -5,17 +5,17 @@
   "main": "./src/index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/mainleau/deceit.js.git"
+    "url": "https://github.com/deluxeservices/deceit.js.git"
   },
   "keywords": [
     "deceit",
     "api",
     "node"
   ],
-  "author": "mainleau",
+  "author": "deluxejaiiime",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/mainleau/deceit.js/issues"
+    "url": "https://github.com/deluxeservices/deceit.js/issues"
   },
   "homepage": "https://github.com/mainleau/deceit.js#readme",
   "dependencies": {
